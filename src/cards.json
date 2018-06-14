@@ -1,11 +1,13 @@
 [
     {
         "id": 1,
-        "image": "./images/biohazard.svg"
+        "image": "./images/biohazard.svg",
+        "order": 20
     },
     {
         "id": 2,
-        "image": "./images/doubled.svg"
+        "image": "./images/doubled.svg",
+        "order": 19
     },
     {
         "id": 3,
