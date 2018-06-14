@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "image": "./images/biohazard.svg"
+    },
+    {
+        "id": 2,
+        "image": "./images/doubled.svg"
+    },
+    {
+        "id": 3,
+        "image": "./images/fleur-de-lys.svg"
+    },
+    {
+        "id": 4,
+        "image": "./images/mass-driver.svg"
+    },
+    {
+        "id": 5,
+        "image": "./images/orbital.svg"
+    },
+    {
+        "id": 6,
+        "image": "./images/overmind.svg"
+    },
+    {
+        "id": 7,
+        "image": "./images/reactor.svg"
+    },
+    {
+        "id": 8,
+        "image": "./images/regeneration.svg"
+    },
+    {
+        "id": 9,
+        "image": "./images/skeleton-inside.svg"
+    },
+    {
+        "id": 10,
+        "image": "./images/skull-crossed-bones.svg"
+    },
+    {
+        "id": 11,
+        "image": "./images/spiked-dragon-head.svg"
+    },
+    {
+        "id": 12,
+        "image": "./images/totem-head.svg"
+    },
+    {
+        "id": 13,
+        "image": "./images/triple-beak.svg"
+    },
+    {
+        "id": 14,
+        "image": "./images/triple-corn.svg"
+    },
+    {
+        "id": 15,
+        "image": "./images/triple-plier.svg"
+    },
+    {
+        "id": 16,
+        "image": "./images/triple-yin.svg"
+    },
+    {
+        "id": 17,
+        "image": "./images/ubisoft-sun.svg"
+    },
+    {
+        "id": 18,
+        "image": "./images/warlock-eye.svg"
+    },
+    {
+        "id": 19,
+        "image": "./images/zigzag-cage.svg"
+    },
+    {
+        "id": 20,
+        "image": "./images/moebius-star.svg"
+    }
+]
