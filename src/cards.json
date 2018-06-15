@@ -2,12 +2,12 @@
     {
         "id": 1,
         "image": "./images/biohazard.svg",
-        "order": 20
+        "clicked": false
     },
     {
         "id": 2,
         "image": "./images/doubled.svg",
-        "order": 19
+        "clicked": false
     },
     {
         "id": 3,
