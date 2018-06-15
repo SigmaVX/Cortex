@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 class Box extends React.Component{
 
   // Set Up Inital State
@@ -13,36 +11,31 @@ class Box extends React.Component{
     };
   }
 
- 
-  
   // Send Data To Parent (AKA App.JS)
   sendData = () =>{
     this.props.getData(this.state.count);
   }
 
+  // Send Data To Parent To Reset Score
+  resetGame = () =>{
+    this.props.resetGame();
+  }
 
   clickCheck = () => {
-     // Updating State & Send Data To Parent
+    
+    // Updating State & Send Data To Parent With Callback To Run Async (Important!)
     if(this.state.clicked === "false"){
-      this.setState({clicked: "true"});
-      console.log("Total Clicked: ", this.state.count, " Status: ", this.state.clicked);
-      this.sendData();
-    } else {
-      // console.log("clicked");
+      this.setState({clicked: "true", count: 1}, () => {
+        console.log("Total Clicked: ", this.state.count, " Status: ", this.state.clicked);
+        this.sendData();    
+      });
       
-      // this.sendData();
+    } else {
+      this.resetGame();
     }
   }
 
-  // how can i work with state
-  // how can i pass informtion from a sub component state to a parent state?
-  // how come i cannot write JS inside the constructors?
-  // do i need the constructor(props) to initiate state?
-  // exmplain the lifecycle hooks and how when to use them
-
-
   render(){
-    // console.log(this.state);
     return (
         <div 
           className="card col-2 mx-2 my-2" 
@@ -57,7 +50,5 @@ class Box extends React.Component{
       )
   };
 }
-
-// }
 
 export default Box;

@@ -10,8 +10,8 @@ const Header = (props) => {
                 <h3 className="col-12">Instructions</h3>
             </div>
             <div className="row no-gutters justify-content-around">
-                 <h2 className="col-12 col-md-3 score-text">Current Score: {props.right}</h2>
-                 <h2 className="col-12 col-md-3 score-text">High Score: {props.topscore}</h2>   
+                 <h2 className="col-12 col-md-3 score-text">Current Score: {props.score}</h2>
+                 <h2 className="col-12 col-md-3 score-text">High Score: {props.highScore}</h2>   
             </div>
         </div>
     )
