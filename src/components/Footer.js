@@ -1,9 +1,11 @@
 import React from "react";
 
-const Footer = (props) => (  
-    <footer className="row col-12 no-gutters">
-        &copy; 2018 Tony Wible
-    </footer>
+const Footer = (props) => (
+    <div className="row no-gutters text-center my-4">  
+        <footer className="col-12">
+            &copy; 2018 Tony Wible
+        </footer>
+    </div>
 )
 
 

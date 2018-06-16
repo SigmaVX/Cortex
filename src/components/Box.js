@@ -11,7 +11,7 @@ class Box extends React.Component{
     };
   }
 
-  // Loops Through All Boxes To Check If Reset Is Active And Change State
+  // Loops Through All Boxes To Check If Reset Is Active And Changes State
   componentDidUpdate() {
     if (this.props.reset === "yes" && this.state.clicked === "true") {
       this.setState({clicked: "false"})
@@ -28,6 +28,7 @@ class Box extends React.Component{
     this.props.resetGame();
   }
 
+  // Checks If Box Has Been Checked
   clickCheck = () => {
     
     // Updating State & Send Data To Parent With Callback To Run Async (Important!)

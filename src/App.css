@@ -1,33 +1,44 @@
-.App {
-  text-align: center;
+footer{
+  font-family: 'Krona One', sans-serif;
+  font-size: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1{
+  font-family: 'Krona One', sans-serif;
+  font-size: 70px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+h2{
+  font-family: 'Comfortaa', cursive;
+  font-size: 50px;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
 
-.App-intro {
-  font-size: large;
+h3{
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 
 .score-text{
   display: inline;
+}
+
+.score-card{
+  background-color: blanchedalmond;
+}
+
+/* Sticky Score Card */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .wrapper {
+  padding-top: 102px;
+}
+
+.wrapper{
+  padding: 16px;
 }
