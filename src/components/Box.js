@@ -11,6 +11,13 @@ class Box extends React.Component{
     };
   }
 
+  // Loops Through All Boxes To Check If Reset Is Active And Change State
+  componentDidUpdate() {
+    if (this.props.reset === "yes" && this.state.clicked === "true") {
+      this.setState({clicked: "false"})
+    }
+  }
+
   // Send Data To Parent (AKA App.JS)
   sendData = () =>{
     this.props.getData(this.state.count);
@@ -42,10 +49,8 @@ class Box extends React.Component{
           key={this.props.id} 
           id={this.props.id}
           clicked={this.state.clicked} 
-
           onClick={() => this.clickCheck()}>
           <img alt="Memory Item" src={this.props.image} />
-          {this.state.clicked}
         </div>
       )
   };

@@ -15,11 +15,12 @@ class App extends Component {
     this.state = { 
       cards: cards,
       score: 0,
-      highScore: 0
+      highScore: 0, 
+      reset: "no"
     }
   }
 
-  // Get Data From Child Component
+  // Get Data From Child Component - Set High Score
   getData = (dataFromChild) => {
     this.setState({score: this.state.score + dataFromChild}, ()=>{
       if(this.state.score > this.state.highScore){
@@ -29,8 +30,10 @@ class App extends Component {
   }
 
   resetGame = (dataFromChild) => {
-    this.setState({score: 0});
-    
+    this.setState({score: 0, reset: "yes"}, ()=>{
+      this.setState({reset: "no"})
+    });
+
   }
 
   // Random Shuffle Of Cards JSON Array 
@@ -41,7 +44,6 @@ class App extends Component {
   reload = () => {
     window.location.reload();
   }
-
 
   render() {
     console.log("Score: ", this.state.score);
@@ -65,6 +67,7 @@ class App extends Component {
             id={card.id}
             image={card.image}
             reload={this.reload}
+            reset={this.state.reset}
           />
           ))
         }
