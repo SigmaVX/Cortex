@@ -28,6 +28,7 @@
     
     <!-- CSS, Font, & Icon Files --> 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Krona+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="shortcut icon" href="/images/Sigma.png">
 
 
@@ -51,21 +52,6 @@
 
     <!-- Bootstrap, Firebase, Moment.JS, & JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
-    <script>
-      window.onscroll = function() {stickyScore()};
-      
-      var score = document.getElementById("score-card");
-      var sticky = score.offsetTop;
-      
-      function stickyScore() {
-        if (window.pageYOffset >= sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-      </script>
-
 
   </body>
 </html>

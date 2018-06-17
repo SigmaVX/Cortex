@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+// import ReactDOM from "react-dom";
+import { StickyContainer, Sticky } from 'react-sticky';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Body from './components/Body';
+import Score from './components/Score';
 import Box from './components/Box';
 import cards from './cards.json';
 import './App.css';
@@ -43,19 +46,27 @@ class App extends Component {
     cards.sort(function(a, b){return 0.5 - Math.random()});
   }
 
-  reload = () => {
-    window.location.reload();
-  }
-
   render() {
     console.log("Score: ", this.state.score);
     return (
 
       <div>
-        <Header
-        score={this.state.score}
-        highScore={this.state.highScore}
-        />
+        
+          <Header/>
+          <StickyContainer>
+            <Sticky>
+              {({style})=>{   
+                  return (
+                    <Score
+                    style={{...style}}
+                    score={this.state.score}
+                    highScore={this.state.highScore}
+                    />
+                  )
+              }}       
+            </Sticky>
+
+          
 
         <Body>
 
@@ -75,7 +86,9 @@ class App extends Component {
         }
 
         </Body>
+        </StickyContainer>
         <Footer/>
+       
       </div>
     );
   }

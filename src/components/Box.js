@@ -35,10 +35,14 @@ class Box extends React.Component{
     if(this.state.clicked === "false"){
       this.setState({clicked: "true", count: 1}, () => {
         console.log("Total Clicked: ", this.state.count, " Status: ", this.state.clicked);
-        this.sendData();    
+        document.getElementById("prompt-text").innerHTML = "Correct!";
+        document.getElementById("prompt-text").setAttribute("class", "col-12 score-text correct animated tada");
+        this.sendData(); 
       });
       
     } else {
+      document.getElementById("prompt-text").innerHTML = "Wrong Guess - Score Reset!";
+      document.getElementById("prompt-text").setAttribute("class", "col-12 score-text wrong animated shake");
       this.resetGame();
     }
   }

@@ -5,7 +5,7 @@ footer{
 
 h1{
   font-family: 'Krona One', sans-serif;
-  font-size: 70px;
+  font-size: 70px;  
 }
 
 h2{
@@ -13,32 +13,58 @@ h2{
   font-size: 50px;
 }
 
-
 h3{
   font-family: 'Comfortaa', cursive;
   font-size: 30px;
 }
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.correct{
+  color: peachpuff;
+  font-weight: 700;
+}
+
+.jumbotron{
+  border-radius: 0px;
+  background-image: url("./background.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
 .score-text{
   display: inline;
+  font-weight: 700;
 }
 
 .score-card{
-  background-color: blanchedalmond;
-}
-
-/* Sticky Score Card */
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .wrapper {
-  padding-top: 102px;
+  z-index: 2;
+  background-color: #5e0087;
+  color: #ffffff;
+  height: 105px;
+  text-align: center;
 }
 
 .wrapper{
   padding: 16px;
+}
+
+.wrong{
+  color: goldenrod;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
 }
