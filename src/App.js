@@ -48,6 +48,7 @@ class App extends Component {
 
   render() {
     console.log("Score: ", this.state.score);
+    
     return (
 
       <div>
@@ -65,9 +66,7 @@ class App extends Component {
                   )
               }}       
             </Sticky>
-
-          
-
+            
         <Body>
 
         {this.shuffle()}
